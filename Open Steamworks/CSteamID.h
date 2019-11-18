@@ -373,7 +373,7 @@ public:
 			sprintf(pchBuf, "STEAM_0:%u:%u", (m_steamid.m_comp.m_unAccountID % 2) ? 1 : 0, (uint32)m_steamid.m_comp.m_unAccountID / 2);
 			break;
 		default:
-			sprintf(pchBuf, "%llu", ConvertToUint64());
+			sprintf(pchBuf, "%lu", ConvertToUint64());
 		}
 		return pchBuf;
 	}
